@@ -1,0 +1,368 @@
+@media (max-width: 1260px) {
+  .container {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+}
+@media (max-width: 840px) {
+  .container {
+    padding-right: 46px;
+    padding-left: 46px;
+  }
+
+  .bigContainer {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  .blockTitle {
+    font-size: 28px;
+  }
+
+  .blockSubTitle {
+    font-size: 26px;
+  }
+}
+@media (max-width: 500px) {
+  .blockTitle {
+    font-size: 24px;
+  }
+
+  .blockSubTitle {
+    font-size: 22px;
+  }
+}
+@media (max-width: 1100px) {
+  .header__menu-burger {
+    max-width: 644px;
+  }
+}
+@media (max-width: 930px) {
+  .header__menu-burger {
+    max-width: 594px;
+  }
+}
+@media (max-width: 840px) {
+  .header__logo {
+    font-size: 20px;
+  }
+
+  .header__number {
+    margin-top: 0;
+  }
+}
+@media (max-width: 500px) {
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .header__burger {
+    right: 20px;
+    left: auto;
+    margin-top: 11px;
+  }
+
+  .header__menu-burger {
+    padding-top: 40px;
+  }
+
+  .header__number {
+    display: none;
+  }
+
+  .header__logo {
+    left: 20px;
+    margin-top: 6px;
+  }
+
+  .header__wrapper {
+    padding-top: 40px;
+  }
+}
+@media (max-width: 1240px) {
+  .hero {
+    background-size: 70%;
+    background-position-y: 0;
+    background-position-x: 140%;
+  }
+}
+@media (max-width: 1100px) {
+  .hero__content {
+    padding-bottom: 160px;
+  }
+}
+@media (max-width: 840px) {
+  .hero {
+    background-size: 65%;
+    background-position-y: 5%;
+  }
+  .hero__content {
+    padding-top: 102px;
+    padding-bottom: 152px;
+  }
+  .hero__title {
+    margin-bottom: 29px;
+    font-size: 60px;
+  }
+  .hero__subTitle {
+    margin-bottom: 53px;
+  }
+  .hero__chooseCakeBtn {
+    margin-bottom: 147px;
+  }
+}
+@media (max-width: 670px) {
+  .hero {
+    background-position-x: 170%;
+  }
+  .hero__content {
+    padding-top: 112px;
+  }
+  .hero__chooseCakeBtn {
+    margin-bottom: 80px;
+  }
+  .hero__itemStrawberry {
+    display: none;
+  }
+  .hero__itemFlower {
+    display: none;
+  }
+  .hero__itemBigStrawberry {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  .hero {
+    background-position: center;
+    background-position-y: -70%;
+    background-size: 70%;
+  }
+  .hero__content {
+    padding-bottom: 50px;
+  }
+  .hero__title {
+    font-size: 40px;
+    text-align: center;
+    letter-spacing: 0.22px;
+    line-height: normal;
+    margin-bottom: 15px;
+  }
+  .hero__subTitle {
+    font-size: 22px;
+    letter-spacing: normal;
+    text-align: center;
+    font-style: normal;
+  }
+  .hero__contentWrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .hero__options {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 42px;
+  }
+  .hero__options img {
+    width: 13%;
+  }
+  .hero__firstOption {
+    margin-bottom: 12px;
+  }
+  .hero__secondOption span {
+    max-width: 200px;
+  }
+  .hero__chooseCakeBtn {
+    max-width: 240px;
+    text-align: center;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 400px) {
+  .hero {
+    background-position-y: -40%;
+    background-size: 75%;
+  }
+}
+@media (max-width: 1000px) {
+  .ourCakes__wrapperTop {
+    margin-bottom: 30px;
+  }
+  .ourCakes__wrapper__bigBox {
+    min-height: 500px;
+  }
+  .ourCakes__wrapper__smallBox {
+    min-height: 235px;
+  }
+  .ourCakes__wrapper__boxContainer {
+    margin-left: 36px;
+  }
+  .ourCakes__wrapper__boxTitle {
+    margin-top: 30px;
+  }
+  .ourCakes__wrapper__boxArrow {
+    right: 30px;
+  }
+}
+@media (max-width: 840px) {
+  .ourCakes__title {
+    margin-bottom: 37px;
+  }
+
+  .ourCakes__wrapperTop {
+    margin-bottom: 20px;
+  }
+  .ourCakes__wrapper__bigBox {
+    min-height: 388px;
+  }
+  .ourCakes__wrapper__smallBox {
+    min-height: 184px;
+  }
+  .ourCakes__wrapper__boxContainer {
+    margin-left: 26px;
+  }
+  .ourCakes__wrapper__boxArrow {
+    display: none;
+  }
+  .ourCakes__wrapper__boxTitle {
+    margin-top: 20px;
+    font-size: 14px;
+  }
+  .ourCakes__wrapper__boxText {
+    font-size: 12px;
+  }
+}
+@media (max-width: 500px) {
+  .ourCakes__title {
+    text-align: center;
+    margin-bottom: 32px;
+  }
+
+  .ourCakes__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .ourCakes__wrapperTop {
+    margin-bottom: 0;
+  }
+  .ourCakes__wrapper__bigBox {
+    width: 100%;
+  }
+  .ourCakes__wrapper__twoBoxes {
+    width: 100%;
+  }
+  .ourCakes__wrapper__smallBox {
+    width: 100%;
+  }
+  .ourCakes__wrapper__box {
+    margin-bottom: 10px;
+    min-height: 120px;
+    background-size: 80%;
+    background-position-x: 120%;
+  }
+  .ourCakes__wrapper__boxContainer {
+    margin-left: 13px;
+  }
+  .ourCakes__wrapper__boxTitle {
+    margin-top: 13px;
+  }
+}
+@media (max-width: 1170px) {
+  .specialOrder__firstStep__container {
+    margin-left: 65px;
+    padding-top: 30px;
+  }
+  .specialOrder__steps__numBlock {
+    margin-right: 60px;
+  }
+
+  .swiper-button-next {
+    right: 0;
+  }
+}
+@media (max-width: 1000px) {
+  .swiper-filling-slide__textBox__cost {
+    margin-bottom: 25px;
+  }
+
+  .swiper-filling-slide__textBox {
+    padding-right: 20px;
+  }
+
+  .swiper-filling-slide__imgBlock {
+    width: 45%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .swiper-filling-slide__imgBlock img {
+    max-width: 100%;
+  }
+
+  .specialOrder__firstStep__container {
+    margin-left: 55px;
+    padding-top: 20px;
+  }
+  .specialOrder__steps__numBlock {
+    margin-right: 50px;
+  }
+
+  .swiper-button-next {
+    right: 10px;
+  }
+}
+@media (max-width: 840px) {
+  .specialOrder__firstStep__container {
+    margin-left: 45px;
+    padding-top: 10px;
+    padding-bottom: 56px;
+  }
+  .specialOrder__steps__numBlock {
+    margin-right: 10px;
+  }
+  .specialOrder__steps__number {
+    font-size: 36px;
+    margin-bottom: 4px;
+  }
+  .specialOrder__steps__text {
+    font-size: 18px;
+    line-height: 18.24px;
+  }
+
+  .swiper-button-next {
+    right: 10px;
+  }
+
+  .swiper-button-prev {
+    left: 50px;
+  }
+
+  .swiper-filling-slide__textBox {
+    margin-left: 25px;
+  }
+  .swiper-filling-slide__textBox__title {
+    font-size: 18px;
+  }
+  .swiper-filling-slide__textBox__text {
+    font-size: 14px;
+    max-width: 218px;
+  }
+  .swiper-filling-slide__textBox__cost {
+    font-size: 20px;
+    margin-top: 0;
+  }
+  .swiper-filling-slide__textBox__chooseCakeBtn {
+    margin-bottom: 24px;
+  }
+}

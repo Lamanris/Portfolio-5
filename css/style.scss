@@ -1,0 +1,468 @@
+@font-face {
+  font-family: 'Circe';
+  src: url('../fonts/Circe-regular.eot');
+  src: local('☺'), url('../fonts/Circe-regular.woff') format('woff'), url('../fonts/Circe-regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Circe';
+  src: url('../fonts/Circe-bold.eot');
+  src: local('☺'), url('../fonts/Circe-bold.woff') format('woff'), url('../fonts/Circe-bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Intro Script R - H 2 Base';
+  src: url('../fonts/IntroScriptR-H2Base.eot');
+  src: local('☺'), url('../fonts/IntroScriptR-H2Base.woff') format('woff'), url('../fonts/IntroScriptR-H2Base.ttf') format('truetype'), url('../fonts/IntroScriptR-H2Base.svg') format('svg');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Playfair Display';
+  src: url('../fonts/PlayfairDisplay-Italic-VariableFont_wght.eot');
+  src: local('☺'), url('../fonts/PlayfairDisplay-Italic-VariableFont_wght.woff') format('woff'), url('../fonts/PlayfairDisplay-Italic-VariableFont_wght.ttf') format('truetype'), url('../fonts/PlayfairDisplay-Italic-VariableFont_wght.svg') format('svg');
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Playfair Display';
+  src: url('../fonts/PlayfairDisplay-VariableFont_wght.eot');
+  src: local('☺'), url('../fonts/PlayfairDisplay-VariableFont_wght.woff') format('woff'), url('../fonts/PlayfairDisplay-VariableFont_wght.ttf') format('truetype'), url('../fonts/PlayfairDisplay-VariableFont_wght.svg') format('svg');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-Regular.eot');
+  src: local('☺'), url('../fonts/Roboto-Regular.woff') format('woff'), url('../fonts/Roboto-Regular.ttf') format('truetype'), url('../fonts/Roboto-Regular.svg') format('svg');
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  font-family: "Circe", sans-serif;
+  position: relative;
+}
+
+.container {
+  max-width: 1220px;
+  margin: 0 auto;
+}
+
+*:focus {
+  outline: none !important;
+}
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.body-backGround {
+  background-color: #fbebea;
+  z-index: -2;
+  position: absolute;
+  right: 0;
+  width: 100%;
+  top: 0;
+}
+
+.blockTitle {
+  font-family: "Playfair Display",sans-serif;
+  color: #2d2829;
+  font-size: 40px;
+  font-weight: 700;
+  text-align: left;
+  font-style: normal;
+  letter-spacing: 0.06px;
+  line-height: normal;
+}
+.blockSubTitle {
+  font-family: "Intro Script R - H 2 Base", sans-serif;
+  color: #32313d;
+  font-size: 35px;
+  font-weight: 400;
+  text-align: left;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+}
+.header {
+      &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 58px;
+      }
+      &__logo {
+        font-family: "Playfair Display",sans-serif;
+        color: #2d2829;
+        font-size: 23px;
+        font-weight: 700;
+        font-style: normal;
+        letter-spacing: 0.36px;
+        line-height: normal;
+        text-decoration: none;
+      }
+      &__menu-burger {
+        max-width: 744px;
+        width: 100%;
+      }
+      &__menu {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 8px;
+        width: 100%;
+            &__item {
+              font-family: "Circe", sans-serif;
+              color: #2d2829;
+              font-size: 13px;
+              font-weight: 400;
+              font-style: normal;
+              letter-spacing: normal;
+              line-height: 30.67px;
+              text-transform: uppercase;
+              text-decoration: none;
+                  &-highlighted {
+                    color: #f50049;
+                  }
+            }
+      }
+      &__number {
+        font-family: "Circe",sans-serif;
+        color: #2d2829;
+        font-size: 15px;
+        font-weight: 700;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: 30.67px;
+        margin-top: 8px;
+      }
+      &__burger {
+        display: none;
+      }
+}
+
+.hero {
+  background: url("../img/hero__topImg.png") no-repeat right/contain;
+  background-position-x: 140%;
+  position: relative;
+
+      &__content {
+        max-width: 463px;
+        padding-top: 130px;
+        padding-bottom: 258px;
+      }
+      &__title {
+        font-family: "Playfair Display",sans-serif;
+        color: #2e2829;
+        font-size: 78px;
+        font-weight: 700;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: 70px;
+        margin-bottom: 31px;
+      }
+      &__subTitle {
+        font-family: "Intro Script R - H 2 Base",sans-serif;
+        color: #32313d;
+        font-size: 41px;
+        font-weight: 400;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: normal;
+        margin-bottom: 58px;
+      }
+      &__options {
+        img {
+          filter: invert(13%) sepia(72%) saturate(7498%) hue-rotate(337deg) brightness(94%) contrast(105%);
+          margin-right: 12px;
+        }
+        display: flex;
+        justify-content: space-between;
+      }
+      &__option {
+        font-family: "Circe", sans-serif;
+        color: #000000;
+        font-size: 14px;
+        font-weight: 400;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: 18px;
+        display: flex;
+        align-items: center;
+      }
+      &__secondOption {
+        span {
+          max-width: 172px;
+        }
+      }
+      &__itemStrawberry {
+        position: absolute;
+        top: 40px;
+        left: 45%;
+        opacity: 0.5;
+        z-index: -1;
+        max-width: 100%;
+      }
+      &__itemFlower {
+        position: absolute;
+        top: 228px;
+        left: 40%;
+        opacity: 0.5;
+        z-index: -1;
+      }
+      &__itemBigStrawberry {
+        position: absolute;
+        top: 338px;
+        left: 30%;
+        opacity: 0.5;
+        z-index: -1;
+      }
+}
+.chooseCakeBtn {
+  font-family: "Circe",sans-serif;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: inherit;
+  text-align: left;
+  text-transform: uppercase;
+  border-radius: 26px;
+  background-color: #f50049;
+  display: inline-block;
+  padding: 20px 67px 18px 66px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 500ms ease;
+  &:hover {
+        background: rgba(0,0,0,0);
+        color: #f50049;
+        box-shadow: inset 0 0 0 5px #f50049;
+      }
+}
+.hero__chooseCakeBtn {
+  margin-bottom: 128px;
+}
+
+
+.ourCakes {
+      &__title {
+        margin-bottom: 61px;
+      }
+      &__wrapper {
+        display: flex;
+        justify-content: space-between;
+            &Top {
+              margin-bottom: 40px;
+            }
+            &__boxContainer {
+              margin-left: 46px;
+            }
+            &__boxTitle {
+              font-family: "Circe",sans-serif;
+              color: #2d2829;
+              font-size: 24px;
+              font-weight: 400;
+              text-align: left;
+              font-style: normal;
+              letter-spacing: normal;
+              line-height:inherit;
+              margin-top: 40px;
+              margin-bottom: 3px;
+            }
+            &__boxText {
+              font-family: "Circe",sans-serif;
+              opacity: 0.7;
+              color: #2d2829;
+              font-size: 20px;
+              font-weight: 400;
+              text-align: left;
+              font-style: normal;
+              letter-spacing: normal;
+              line-height: inherit;
+            }
+            &__bigBox {
+              width: 57%;
+              min-height: 654px;
+            }
+            &__twoBoxes {
+              width: 39.6%;
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+            }
+            &__smallBox {
+              min-height: 307px;
+            }
+            &__box {
+              position: relative;
+                  &1 {
+                    background: white url("../img/whiteCake.png") no-repeat center/contain;
+                  }
+                  &2 {
+                    background: white url("../img/blackCake.png") no-repeat center/contain;
+                  }
+                  &3 {
+                    background: white url("../img/marryCake.png") no-repeat center/contain;
+                  }
+                  &4 {
+                    background: white url("../img/chocoCake.png") no-repeat center/contain;
+                  }
+                  &5 {
+                    background: white url("../img/flowerCake.png") no-repeat center/contain;
+                  }
+                  &6 {
+                    background: #f3f1f4 url("../img/candyCake.png") no-repeat center/contain;
+                  }
+            }
+            &__boxArrow {
+              font-family: "Circe",sans-serif;
+              color: #2d2829;
+              font-size: 20px;
+              font-weight: 400;
+              text-align: left;
+              font-style: normal;
+              letter-spacing: normal;
+              line-height: inherit;
+              display: flex;
+              align-items: center;
+              text-decoration: none;
+              position: absolute;
+              bottom: 17px;
+              right: 48px;
+              padding: 20px;
+                  span {
+                    margin-right: 24px;
+                  }
+            }
+
+      }
+}
+
+.specialOrder {
+      &__title {
+        text-align: center;
+        margin-top: 100px;
+        margin-bottom: 6px;
+      }
+      &__subTitle {
+        text-align: center;
+      }
+      &__firstStep {
+        background-color: #ffffff;
+        margin-top: 49px;
+      }
+      &__steps {
+            &__container {
+              margin-left: 80px;
+              padding-top: 40px;
+              padding-bottom: 93px;
+            }
+            &__numBlock {
+              float: left;
+              margin-right: 80px;
+            }
+            &__number {
+              font-family: "Playfair Display",sans-serif;
+              color: #f50049;
+              font-size: 58px;
+              font-weight: 700;
+              text-align: left;
+              font-style: normal;
+              letter-spacing: 0.04px;
+              line-height: inherit;
+            }
+            &__text {
+              font-family: "Playfair Display",sans-serif;
+              color: #f50049;
+              font-size: 27px;
+              font-weight: 700;
+              text-align: left;
+              font-style: normal;
+              letter-spacing: 0.05px;
+              line-height: normal;
+              max-width: 133px;
+            }
+            &__firstSlider {
+              margin-top: 40px;
+            }
+      }
+}
+.filling-slider {
+  max-width: 900px;
+  position: relative;
+}
+.swiper-filling-slide {
+  display: flex;
+      &__imgBlock {
+        background-color: #fbebea;
+        display: flex;
+            img {
+              display: block;
+            }
+      }
+      &__textBox {
+        margin-left: 42px;
+            &__title {
+              font-family: "Circe",sans-serif;
+              color: #2f2f2f;
+              font-size: 20px;
+              font-weight: 700;
+              font-style: normal;
+              letter-spacing: 0.04px;
+              line-height: normal;
+              margin-top: 65px;
+            }
+            &__text {
+              font-family: "Circe", sans-serif;
+              color: #2f2f2f;
+              font-size: 18px;
+              font-weight: 400;
+              font-style: normal;
+              letter-spacing: normal;
+              line-height: normal;
+              max-width: 278px;
+              display: block;
+            }
+            &__cost {
+              font-family: "Playfair Display",sans-serif;
+              color: #2f2f2f;
+              font-size: 22px;
+              font-weight: 700;
+              font-style: normal;
+              letter-spacing: normal;
+              line-height: normal;
+              display: block;
+              margin-top: 14px;
+              margin-bottom: 50px;
+            }
+            &__chooseCakeBtn {
+              margin-bottom: 56px;
+            }
+      }
+}
+.swiper-button-prev {
+  background: inherit;
+  outline: none;
+  border: none;
+  left: 100px;
+      &::after {
+        content: url("../img/slider__arrowLeft.png");
+      }
+}
+.swiper-button-next {
+  background: inherit;
+  outline: none;
+  border: none;
+  right: -100px;
+      &::after {
+        content: url("../img/slider__arrowRight.png");
+      }
+}

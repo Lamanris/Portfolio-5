@@ -1,0 +1,462 @@
+@media (max-width: 1260px) {
+  .container {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+}
+@media (max-width: 840px) {
+  .container {
+    padding-right: 46px;
+    padding-left: 46px;
+  }
+  .bigContainer {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .blockTitle {
+    font-size: 28px;
+  }
+  .blockSubTitle {
+    font-size: 26px;
+  }
+}
+@media (max-width: 500px) {
+  .blockTitle {
+    font-size: 24px;
+  }
+  .blockSubTitle {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .header__menu-burger {
+    max-width: 644px;
+  }
+}
+@media (max-width: 930px) {
+  .header__menu-burger {
+    max-width: 594px;
+  }
+}
+@media (max-width: 840px) {
+  .header__logo {
+    font-size: 20px;
+  }
+  .header__number {
+    margin-top: 0;
+  }
+  //body.lock {
+  //  overflow: hidden;
+  //}
+  //.header__burger {
+  //  display: block;
+  //  width: 26px;
+  //  height: 18px;
+  //  z-index: 4;
+  //  margin-top: 21px;
+  //  position: fixed;
+  //  left: 131px;
+  //  top: 0;
+  //
+  //  span {
+  //    position: absolute;
+  //    background-color: #000000;
+  //    border-radius: 1px;
+  //    left: 0;
+  //    width: 100%;
+  //    height: 2px;
+  //    top: 8px;
+  //    transition: all 0.3s;
+  //  }
+  //
+  //  &:before, &:after {
+  //    content: '';
+  //    background-color: #000000;
+  //    border-radius: 1px;
+  //    position: absolute;
+  //    width: 100%;
+  //    height: 2px;
+  //    left: 0;
+  //    transition: all 0.3s;
+  //  }
+  //
+  //  &:before {
+  //    top: 0;
+  //  }
+  //
+  //  &:after {
+  //    bottom: 0;
+  //  }
+  //}
+  //.header__menu-burger {
+  //  position: fixed;
+  //  top: -100%;
+  //  left: 0;
+  //  width: 100%;
+  //  max-width: 100%;
+  //  height: 100%;
+  //  background-color: #ffffff;
+  //  margin: 0;
+  //  z-index: 3;
+  //  padding: 60px 0 0 0;
+  //  transition: all 0.3s;
+  //  overflow: auto;
+  //}
+  //.header__menu {
+  //  display: flex;
+  //  flex-direction: column;
+  //  text-align: center;
+  //  justify-content: center;
+  //      &__item {
+  //        font-size: 25px;
+  //        margin-top: 30px;
+  //      }
+  //}
+  //.header__menu-burger.active {
+  //  top: 0;
+  //}
+  //.header__logo {
+  //  position: fixed;
+  //  z-index: 4;
+  //  margin-top: 17px;
+  //  top: 0;
+  //  left: 46px;
+  //}
+  //.header__number {
+  //  position: fixed;
+  //  z-index: 4;
+  //  margin-top: 15px;
+  //  top: 0;
+  //  right: 46px;
+  //}
+  //.header__burger.active:before {
+  //  transform: rotate(45deg);
+  //  top: 8px;
+  //}
+  //.header__burger.active:after {
+  //  transform: rotate(-45deg);
+  //  bottom: 8px;
+  //}
+  //.header__burger.active span {
+  //  transform: scale(0);
+  //}
+}
+
+@media (max-width: 500px) {
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .header__burger {
+    right: 20px;
+    left: auto;
+    margin-top: 11px;
+  }
+  .header__menu-burger {
+    padding-top: 40px;
+  }
+  .header__number {
+    display: none;
+  }
+  .header__logo {
+    left: 20px;
+    margin-top: 6px;
+  }
+  .header__wrapper {
+    padding-top: 40px;
+  }
+}
+///////////////////////HERO/////////////////////
+
+@media (max-width: 1240px) {
+  .hero {
+    background-size: 70%;
+    background-position-y: 0;
+    background-position-x: 140%;
+  }
+}
+@media (max-width: 1100px) {
+  .hero__content {
+    padding-bottom: 160px;
+  }
+}
+@media (max-width: 840px) {
+  .hero {
+    background-size: 65%;
+    background-position-y: 5%;
+        &__content {
+          padding-top: 102px;
+          padding-bottom: 152px;
+        }
+        &__title {
+          margin-bottom: 29px;
+          font-size: 60px;
+        }
+        &__subTitle {
+          margin-bottom: 53px;
+        }
+        &__chooseCakeBtn {
+          margin-bottom: 147px;
+        }
+  }
+}
+@media (max-width: 670px) {
+  .hero {
+    background-position-x: 170%;
+    &__content {
+      padding-top: 112px;
+    }
+    &__chooseCakeBtn {
+      margin-bottom: 80px;
+    }
+    &__itemStrawberry {
+      display: none;
+    }
+    &__itemFlower {
+      display: none;
+    }
+    &__itemBigStrawberry {
+      display: none;
+    }
+  }
+}
+@media (max-width: 500px) {
+  .hero {
+    background-position: center;
+    background-position-y: -70%;
+    background-size: 70%;
+        &__content {
+          padding-bottom: 50px;
+        }
+        &__title {
+          font-size: 40px;
+          text-align: center;
+          letter-spacing: 0.22px;
+          line-height: normal;
+          margin-bottom: 15px;
+        }
+        &__subTitle {
+          font-size: 22px;
+          letter-spacing: normal;
+          text-align: center;
+          font-style: normal;
+        }
+        &__contentWrapper {
+          display: flex;
+          flex-direction: column-reverse;
+        }
+        &__options {
+          flex-direction: column;
+          margin-bottom: 42px;
+              img {
+                width: 13%;
+              }
+        }
+        &__firstOption {
+          margin-bottom: 12px;
+        }
+        &__secondOption {
+              span{
+                max-width: 200px;
+              }
+        }
+        &__chooseCakeBtn {
+          max-width: 240px;
+          text-align: center;
+          box-sizing: border-box;
+          margin: 0 auto;
+        }
+  }
+}
+@media (max-width: 400px) {
+  .hero {
+    background-position-y: -40%;
+    background-size: 75%;
+  }
+}
+//////////////////////////ourCakes//////////////////////////////
+
+@media (max-width: 1000px) {
+  .ourCakes__wrapper {
+        &Top {
+          margin-bottom: 30px;
+        }
+        &__bigBox {
+          min-height: 500px;
+        }
+        &__smallBox {
+          min-height: 235px;
+        }
+        &__boxContainer {
+          margin-left: 36px;
+        }
+        &__boxTitle {
+          margin-top: 30px;
+        }
+        &__boxArrow {
+          right: 30px;
+        }
+  }
+}
+@media (max-width: 840px) {
+  .ourCakes__title {
+    margin-bottom: 37px;
+  }
+  .ourCakes__wrapper {
+    &Top {
+      margin-bottom: 20px;
+    }
+    &__bigBox {
+      min-height: 388px;
+    }
+    &__smallBox {
+      min-height: 184px;
+    }
+    &__boxContainer {
+      margin-left: 26px;
+    }
+    &__boxArrow {
+      display: none;
+    }
+    &__boxTitle {
+      margin-top: 20px;
+      font-size: 14px;
+    }
+    &__boxText {
+      font-size: 12px;
+    }
+  }
+}
+@media (max-width: 500px) {
+  .ourCakes__title {
+    text-align: center;
+    margin-bottom: 32px;
+  }
+  .ourCakes__wrapper {
+    flex-direction: column;
+        &Top {
+          margin-bottom: 0;
+        }
+        &__bigBox {
+          width: 100%;
+        }
+        &__twoBoxes {
+          width: 100%;
+        }
+        &__smallBox {
+          width: 100%;
+        }
+        &__box {
+          margin-bottom: 10px;
+          min-height: 120px;
+          background-size: 80%;
+          background-position-x: 120%;
+        }
+        &__boxContainer {
+          margin-left: 13px;
+        }
+        &__boxTitle {
+          margin-top: 13px;
+        }
+  }
+}
+////////////////////////////////////specialOrder///////////////////////
+
+@media (max-width: 1170px) {
+  .specialOrder {
+        &__firstStep {
+              &__container {
+                margin-left: 65px;
+                padding-top: 30px;
+              }
+        }
+        &__steps {
+              &__numBlock {
+                margin-right: 60px;
+              }
+        }
+  }
+  .swiper-button-next {
+    right: 0;
+  }
+}
+@media (max-width: 1000px) {
+  .swiper-filling-slide__textBox__cost {
+    margin-bottom: 25px;
+  }
+  .swiper-filling-slide__textBox {
+    padding-right: 20px;
+  }
+  .swiper-filling-slide__imgBlock {
+    width: 45%;
+    display: flex;
+
+        img {
+          max-width: 100%;
+        }
+  }
+  .specialOrder {
+    &__firstStep {
+      &__container {
+        margin-left: 55px;
+        padding-top: 20px;
+      }
+    }
+    &__steps {
+      &__numBlock {
+        margin-right: 50px;
+      }
+    }
+  }
+  .swiper-button-next {
+    right: 10px;
+  }
+}
+@media (max-width: 840px) {
+  .specialOrder {
+    &__firstStep {
+      &__container {
+        margin-left: 45px;
+        padding-top: 10px;
+        padding-bottom: 56px;
+      }
+    }
+    &__steps {
+      &__numBlock {
+        margin-right: 10px;
+      }
+      &__number {
+        font-size: 36px;
+        margin-bottom: 4px;
+      }
+      &__text {
+        font-size: 18px;
+        line-height: 18.24px;
+      }
+    }
+  }
+  .swiper-button-next {
+    right: 10px;
+  }
+  .swiper-button-prev {
+    left: 50px;
+  }
+  .swiper-filling-slide__textBox {
+    margin-left: 25px;
+        &__title {
+          font-size: 18px;
+        }
+        &__text {
+          font-size: 14px;
+          max-width: 218px;
+        }
+        &__cost {
+          font-size: 20px;
+          margin-top: 0;
+        }
+        &__chooseCakeBtn {
+          margin-bottom: 24px;
+        }
+  }
+}
