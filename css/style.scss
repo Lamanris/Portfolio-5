@@ -357,16 +357,19 @@ body {
       }
       &__firstStep {
         background-color: #ffffff;
+        box-shadow: 0 5px 13px 1px rgba(163, 6, 60, 0.1);
         margin-top: 49px;
+            &__container {
+              display: flex;
+              padding-bottom: 93px;
+            }
       }
       &__steps {
             &__container {
               margin-left: 80px;
               padding-top: 40px;
-              padding-bottom: 93px;
             }
             &__numBlock {
-              float: left;
               margin-right: 80px;
             }
             &__number {
@@ -392,20 +395,22 @@ body {
             }
             &__firstSlider {
               margin-top: 40px;
+              position: relative;
             }
       }
 }
 .filling-slider {
-  max-width: 900px;
-  position: relative;
+  max-width: 700px;
 }
 .swiper-filling-slide {
   display: flex;
       &__imgBlock {
-        background-color: #fbebea;
         display: flex;
             img {
               display: block;
+              background-color: #fbebea;
+              max-width: 100%;
+              object-fit: unset;
             }
       }
       &__textBox {
@@ -452,7 +457,8 @@ body {
   background: inherit;
   outline: none;
   border: none;
-  left: 100px;
+  left: -15%;
+  top: 45%;
       &::after {
         content: url("../img/slider__arrowLeft.png");
       }
@@ -461,8 +467,235 @@ body {
   background: inherit;
   outline: none;
   border: none;
-  right: -100px;
+  right: -15%;
+  top: 45%;
       &::after {
         content: url("../img/slider__arrowRight.png");
+      }
+}
+.swiper-filling-pagination {
+  font-family: "Circe",sans-serif;
+  opacity: 0.7;
+  color: #2f2f2f;
+  font-size: 18px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+  position: absolute;
+  bottom: 0;
+  right: -15%;
+  left: auto;
+  width: 10%;
+}
+
+.specialOrder {
+    &__secondStep {
+      background-color: #ffffff;
+      margin-top: 35px;
+      box-shadow: 0 5px 13px 1px rgba(163, 6, 60, 0.1);
+    }
+}
+.swiper-sizing-wrapper {
+  display: flex;
+  justify-content: space-between;
+  max-width: 842px;
+  margin-left: 110px;
+  padding-bottom: 148px;
+  align-items: flex-end;
+}
+.swiper-sizing-slide {
+      &1 {
+        max-width: 15%;
+      }
+      &2 {
+        max-width: 18.2%;
+      }
+      &3{
+        max-width: 20.5%;
+      }
+      &4 {
+        max-width: 23.7%;
+      }
+      &__body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      &__text {
+        font-family: "Circe",sans-serif;
+        opacity: 0.8;
+        color: #2f2f2f;
+        font-size: 18px;
+        font-weight: 400;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: normal;
+        margin-top: 35px;
+      }
+      &__img {
+        position: relative;
+          img {
+            max-width: 100%;
+            object-fit: contain;
+          }
+          &-text {
+            font-family: "Circe",sans-serif;
+            color: #2f2f2f;
+            font-size: 17px;
+            font-weight: 400;
+            font-style: normal;
+            letter-spacing: normal;
+            line-height: normal;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+          }
+      }
+      &__chooseCakeBtn {
+        display: none;
+      }
+}
+.specialOrder {
+    &__thirdStep {
+      background-color: #ffffff;
+      margin-top: 35px;
+      box-shadow: 0 5px 13px 1px rgba(163, 6, 60, 0.1);
+      position: relative;
+        &__numBlock {
+          float: left;
+        }
+        &__cakeBg {
+          position: absolute;
+          top: 190px;
+              img {
+                max-width: 100%;
+              }
+        }
+    }
+}
+.lookingSwiper-container {
+  max-width: 683px;
+}
+.looking-slider {
+  max-width: 842px;
+  margin-left: 210px;
+  margin-top: 25px;
+  position: relative;
+}
+.swiper-looking-wrapper {
+  padding-bottom: 10px;
+}
+.swiper-looking-slide {
+  text-align: center;
+  box-shadow: 0 10px 10px -3px rgba(246,246,246,0.75);
+    &__textBox {
+      margin-top: -80px;
+      margin-bottom: 30px;
+        &__title {
+          font-family: "Circe",sans-serif;
+          color: #2f2f2f;
+          font-size: 20px;
+          font-weight: 400;
+          font-style: normal;
+          letter-spacing: normal;
+          line-height: inherit;
+        }
+        &__cost {
+          font-family: "Playfair Display",sans-serif;
+          color: #2f2f2f;
+          font-size: 22px;
+          font-weight: 700;
+          font-style: normal;
+          letter-spacing: normal;
+          line-height:inherit;
+        }
+    }
+    &__imgBlock {
+        img {
+          max-width: 100%;
+        }
+    }
+    &__chooseCakeBtn {
+      display: none;
+    }
+}
+.swiper-looking-button-prev {
+  left: 0;
+}
+.swiper-looking-button-next {
+  right: 0;
+}
+.swiper-looking-pagination {
+  bottom: 0;
+  right: 0;
+  text-align: right;
+  font-family: "Circe",sans-serif;
+  opacity: 0.7;
+  color: #2f2f2f;
+  font-size: 18px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+}
+.cakeChoice {
+  margin-top: 64px;
+    &__title {
+      font-family: "Playfair Display",sans-serif;
+      color: #2d2829;
+      font-size: 27px;
+      font-weight: 700;
+      font-style: normal;
+      letter-spacing: 0.04px;
+      line-height: normal;
+    }
+    &__wrapper {
+      display: flex;
+      justify-content: space-between;
+      margin-right: 88px;
+      padding-bottom: 70px;
+      margin-top: 20px;
+      align-items: flex-end;
+    }
+    &__item {
+      border-bottom: 1px solid #c1b0af;
+      padding-bottom: 2px;
+          &__title {
+            font-family: "Intro Script R - H 2 Base",sans-serif;
+            color: #f50049;
+            font-size: 27px;
+            font-weight: 400;
+            font-style: normal;
+            letter-spacing: normal;
+            line-height: normal;
+          }
+          &__text {
+            font-family: "Circe",sans-serif;
+            color: #2f2f2f;
+            font-size: 18px;
+            font-weight: 400;
+            font-style: normal;
+            letter-spacing: 0.33px;
+            line-height: normal;
+            margin-top: 15px;
+            display: inline-block;
+          }
+    }
+}
+
+.reviews {
+  position: relative;
+      &::before {
+        content: url("../img/reviews__illustration.png");
+        position: absolute;
+        top: 0;
+        left: -5%;
+        max-width: 50%;
+      }
+      &__title {
+        text-align: center;
+        padding-top: 115px;
       }
 }

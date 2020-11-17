@@ -365,20 +365,18 @@
 
 @media (max-width: 1170px) {
   .specialOrder {
-        &__firstStep {
+        &__steps {
               &__container {
                 margin-left: 65px;
                 padding-top: 30px;
               }
-        }
-        &__steps {
               &__numBlock {
                 margin-right: 60px;
               }
         }
   }
-  .swiper-button-next {
-    right: 0;
+  .filling-slider {
+    max-width: 600px;
   }
 }
 @media (max-width: 1000px) {
@@ -389,42 +387,54 @@
     padding-right: 20px;
   }
   .swiper-filling-slide__imgBlock {
-    width: 45%;
-    display: flex;
 
-        img {
-          max-width: 100%;
-        }
   }
   .specialOrder {
-    &__firstStep {
+    &__steps {
       &__container {
         margin-left: 55px;
         padding-top: 20px;
       }
-    }
-    &__steps {
       &__numBlock {
-        margin-right: 50px;
+        margin-right: 30px;
       }
     }
   }
-  .swiper-button-next {
-    right: 10px;
+  .filling-slider {
+    max-width: 550px;
+  }
+  .swiper-filling-button-next {
+    right: -5%;
+  }
+  .swiper-filling-pagination {
+    right: -5%;
+  }
+  .swiper-filling-slide__textBox__chooseCakeBtn {
+    margin-bottom: 34px;
+  }
+  .swiper-filling-slide__textBox__title {
+    margin-top: 40px;
   }
 }
 @media (max-width: 840px) {
   .specialOrder {
+    &__title {
+      margin-top: 55px;
+    }
     &__firstStep {
+      margin-top: 31px;
       &__container {
-        margin-left: 45px;
-        padding-top: 10px;
         padding-bottom: 56px;
       }
     }
     &__steps {
+      &__container {
+        padding-top: 10px;
+        margin-left: 45px;
+      }
       &__numBlock {
-        margin-right: 10px;
+        margin-right: 0;
+        max-width: 127px;
       }
       &__number {
         font-size: 36px;
@@ -436,16 +446,21 @@
       }
     }
   }
-  .swiper-button-next {
-    right: 10px;
+  .filling-slider {
+    max-width: 416px;
   }
-  .swiper-button-prev {
-    left: 50px;
+  .swiper-filling-button-next {
+    right: -15%;
+  }
+  .swiper-filling-pagination {
+    right: -15%;
+    width: 15%;
   }
   .swiper-filling-slide__textBox {
     margin-left: 25px;
         &__title {
           font-size: 18px;
+          margin-top: 25px;
         }
         &__text {
           font-size: 14px;
@@ -458,5 +473,417 @@
         &__chooseCakeBtn {
           margin-bottom: 24px;
         }
+  }
+  .specialOrder__steps__firstSlider {
+    margin-top: 20px;
+  }
+  .swiper-filling-slide__imgBlock {
+    img {
+      object-fit: unset;
+    }
+  }
+}
+@media (max-width: 700px) {
+  .specialOrder {
+        &__firstStep {
+              &__container {
+                flex-direction: column;
+                margin-right: 20px;
+              }
+        }
+        &__steps {
+              &__container {
+                margin-left: 20px;
+              }
+              &__numBlock {
+                display: flex;
+                max-width: 100%;
+                align-items: flex-end;
+              }
+              &__number {
+                margin-bottom: 0;
+                margin-right: 13px;
+              }
+              &__text {
+                max-width: 100%;
+                margin-bottom: 1px;
+              }
+        }
+        &__firstStep {
+              &__container {
+                padding-bottom: 26px;
+              }
+        }
+  }
+  .swiper-filling-slide {
+    flex-direction: column;
+        &__imgBlock {
+          width: 100%;
+            img {
+              max-width: 100%;
+              width: 100%;
+              max-height: 200px;
+            }
+        }
+        &__textBox {
+          margin-left: 0;
+          text-align: center;
+          padding-right: 0;
+              &__title {
+                text-align: left;
+              }
+              &__text {
+                max-width: 100%;
+                text-align: left;
+              }
+              &__cost {
+                margin-bottom: 23px;
+                margin-top: 17px;
+              }
+              &__chooseCakeBtn {
+                margin-bottom: 0;
+
+              }
+        }
+  }
+  .filling-slider {
+    max-width: 100%;
+  }
+  .swiper-filling-button {
+    display: none;
+  }
+  .swiper-filling-pagination {
+    bottom: auto;
+    top: 41%;
+    color: #ffffff;
+    font-size: 12px;
+    right: 0;
+  }
+}
+@media (max-width: 500px) {
+  .specialOrder {
+      &__title {
+        margin-top: 45px;
+      }
+      &__firstStep {
+        margin-top: 19px;
+      }
+  }
+}
+@media (max-width: 380px) {
+  .specialOrder {
+        &__steps {
+              &__number {
+                font-size: 30px;
+              }
+              &__text {
+                font-size: 16px;
+              }
+        }
+  }
+  .swiper-filling-slide {
+        &__textBox {
+              &__title {
+                font-size: 16px;
+              }
+              &__text {
+                font-size: 14px;
+              }
+              &__cost {
+                font-size: 18px;
+                margin-top: 12px;
+                margin-bottom: 20px;
+              }
+        }
+  }
+}
+
+@media (max-width: 1200px) {
+  .swiper-sizing-wrapper {
+    margin-left: 60px;
+  }
+}
+@media (max-width: 1100px) {
+  .swiper-sizing-wrapper {
+    margin-left: 20px;
+  }
+}
+@media (max-width: 1000px) {
+  .swiper-sizing-wrapper {
+    margin-left: 0;
+  }
+  .swiper-sizing-slide4 {
+    margin-right: 40px;
+  }
+  .swiper-sizing-slide__text {
+    font-size: 16px;
+  }
+}
+@media (max-width: 840px) {
+  .specialOrder__secondStep {
+    margin-top: 21px;
+  }
+  .swiper-sizing-wrapper {
+    padding-bottom: 75px;
+  }
+  .swiper-sizing-slide {
+      &__text {
+        font-size: 12px;
+        margin-top: 24px;
+      }
+        &__img-text {
+          font-size: 11px;
+        }
+  }
+}
+@media (max-width: 700px) {
+  .swiper-sizing-slide4 {
+    margin-right: 20px;
+  }
+}
+@media (max-width: 620px) {
+  .swiper-sizing-slide {
+      &1 {
+        max-width: 17.2%;
+      }
+      &2 {
+        max-width: 20.2%;
+      }
+      &3 {
+        max-width: 22.5%;
+      }
+      &4 {
+        max-width: 25.7%;
+      }
+  }
+}
+@media (max-width: 550px) {
+  .swiper-sizing-slide {
+    max-width: 100%;
+  }
+  .swiper-sizing-slide {
+    &__text {
+      font-size: 14px;
+      margin-top: 18px;
+    }
+    &__img-text {
+      font-size: 16px;
+    }
+    &__body {
+      margin-right: 20px;
+    }
+    &__chooseCakeBtn {
+      display: inline-block;
+      margin-right: 20px;
+      margin-bottom: 26px;
+    }
+  }
+  .sizingSwiper-container {
+    text-align: center;
+  }
+  .swiper-sizing-wrapper {
+    margin-top: 15px;
+  }
+  .sizingSwiper-container>.swiper-pagination-bullets {
+    bottom: 100px;
+    left: -10px;
+  }
+}
+@media (max-width: 550px) {
+  .specialOrder__secondStep {
+    margin-top: 10px;
+  }
+}
+@media (max-width: 1200px) {
+  .looking-slider {
+    max-width: 742px;
+  }
+  .lookingSwiper-container {
+    max-width: 600px;
+  }
+}
+@media (max-width: 1100px) {
+  .looking-slider {
+    max-width: 642px;
+  }
+  .lookingSwiper-container {
+    max-width: 500px;
+  }
+  .specialOrder__thirdStep__cakeBg {
+    top: 150px;
+      img {
+        max-width: 80%;
+      }
+  }
+  .cakeChoice__wrapper {
+    margin-right: 65px;
+  }
+}
+@media (max-width: 1000px) {
+  .looking-slider {
+    max-width: 580px;
+    margin-left: 150px;
+  }
+  .lookingSwiper-container {
+    max-width: 450px;
+  }
+  .specialOrder__thirdStep__cakeBg {
+    top: 150px;
+      img {
+        max-width: 80%;
+      }
+  }
+  .cakeChoice__wrapper {
+    margin-right: 55px;
+  }
+}
+@media (max-width: 840px) {
+  .specialOrder__thirdStep {
+    margin-top: 21px;
+  }
+  .looking-slider {
+    max-width: 522px;
+    margin-left: 120px;
+  }
+  .lookingSwiper-container {
+    max-width: 417px;
+  }
+  .specialOrder__thirdStep__cakeBg {
+    top: 100px;
+      img {
+        max-width: 50%;
+      }
+  }
+  .cakeChoice__wrapper {
+    margin-right: 45px;
+  }
+  .swiper-looking-slide {
+      &__textBox {
+        margin-top: -40px;
+        margin-bottom: 20px;
+          &__title {
+            font-size: 14px;
+          }
+          &__cost {
+            font-size: 14px;
+          }
+      }
+  }
+  .swiper-looking-pagination {
+    font-size: 12px;
+  }
+  .cakeChoice {
+    margin-top: 30px;
+      &__wrapper {
+        margin-top: 10px;
+        padding-bottom: 44px;
+      }
+      &__title {
+        font-size: 18px;
+      }
+      &__item{
+        border-bottom: 0;
+          &__title {
+            font-size: 18px;
+          }
+          &__text {
+            font-size: 12px;
+            border: 1px solid #dddddd;
+            padding: 10px 29px 10px 28px;
+            border-radius: 20px;
+            margin-top: 10px;
+          }
+      }
+      &__chooseCakeBtn {
+        padding: 17px 40px 16px 42px;
+        font-size: 10px;
+      }
+  }
+}
+@media (max-width: 750px) {
+  .looking-slider {
+    margin-left: 80px;
+  }
+}
+@media (max-width: 700px) {
+  .specialOrder__thirdStep__numBlock {
+    float: none;
+  }
+  .specialOrder__thirdStep__container {
+    margin-right: 20px;
+  }
+  .looking-slider {
+    margin-left: 0;
+    max-width: 100%;
+    margin-top: 5px;
+    text-align: center;
+  }
+  .lookingSwiper-container {
+    max-width: 100%;
+  }
+  .specialOrder__thirdStep__cakeBg {
+    display: none;
+  }
+  .swiper-looking-slide {
+    &__textBox {
+      margin-top: -55px;
+      margin-bottom: 20px;
+      &__title {
+        font-size: 14px;
+      }
+      &__cost {
+        font-size: 18px;
+      }
+    }
+      &__chooseCakeBtn {
+        display: inline-block;
+        margin-top: 10px;
+      }
+      &__imgBlock {
+            img {
+              max-width: 70%;
+            }
+      }
+  }
+  .swiper-looking-pagination {
+    bottom: 50px;
+  }
+  .cakeChoice {
+    &__wrapper {
+      padding-bottom: 34px;
+      flex-direction: column;
+      align-items: center;
+      margin-right: 0;
+    }
+    &__title {
+      font-size: 22px;
+    }
+    &__item {
+      text-align: center;
+      &__title {
+        font-size: 20px;
+        margin-top: 5px;
+      }
+      &__text {
+        font-size: 14px;
+        padding: 7px 62px 8px 61px;
+        margin-top: 3px;
+        text-align: center;
+        min-width: 130px;
+      }
+    }
+    &__chooseCakeBtn {
+      padding: 21px 63px 21px 61px;
+      font-size: 13px;
+      margin-top: 30px;
+    }
+  }
+}
+@media (max-width: 500px) {
+  .swiper-looking-button {
+    display: none;
+  }
+  .specialOrder__thirdStep {
+    margin-top: 10px;
   }
 }
