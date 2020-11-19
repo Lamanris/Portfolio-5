@@ -40,6 +40,7 @@ let lookingSwiper = new Swiper('.lookingSwiper-container', {
 });
 let reviewsSwiper = new Swiper('.reviewsSwiper-container', {
     loop: true,
+    spaceBetween: 50,
     navigation: {
         nextEl:'.swiper-reviews-button-next',
         prevEl:'.swiper-reviews-button-prev',

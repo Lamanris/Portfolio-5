@@ -750,15 +750,218 @@ body {
 
 .reviews {
   position: relative;
+  padding-bottom: 190px;
+  overflow: hidden;
 }
-.reviews::before {
-  content: url("../img/reviews__illustration.png");
+.reviews__illustration {
   position: absolute;
   top: 0;
-  left: -5%;
-  max-width: 50%;
+  max-width: 40%;
+}
+.reviews__illustration1 {
+  left: 0;
+}
+.reviews__illustration2 {
+  -webkit-transform: scale(-1, 1);
+      -ms-transform: scale(-1, 1);
+          transform: scale(-1, 1);
+  right: 0;
 }
 .reviews__title {
   text-align: center;
   padding-top: 115px;
+}
+
+.reviews__slider {
+  max-width: 841px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 64px auto 0;
+}
+
+.reviews-slider {
+  max-width: 616px;
+}
+
+.swiper-reviews-slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.swiper-reviews-slide__imgBlock img {
+  max-width: 100%;
+}
+.swiper-reviews-slide__textBlock__name {
+  font-family: "Circe", sans-serif;
+  color: #2d2829;
+  font-size: 27px;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+}
+.swiper-reviews-slide__textBlock__prof-age {
+  font-family: "Circe", sans-serif;
+  color: #2d2829;
+  font-size: 20px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+}
+.swiper-reviews-slide__textBlock__info {
+  max-width: 353px;
+  margin-top: 23px;
+}
+.swiper-reviews-slide__textBlock__info__text {
+  font-family: "Circe", sans-serif;
+  color: #2d2829;
+  font-size: 18px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+}
+.swiper-reviews-slide__textBlock__info__link {
+  font-family: "Circe", sans-serif;
+  opacity: 0.7;
+  color: #f50049;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: italic;
+  letter-spacing: normal;
+  line-height: normal;
+  margin-left: 5px;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+.swiper-reviews-slide__textBlock__info__link:hover {
+  opacity: 0.5;
+}
+
+.swiper-reviews-button {
+  padding: 10px 20px;
+}
+
+.swiper-reviews-button-prev {
+  left: 0;
+}
+
+.swiper-reviews-button-next {
+  right: 0;
+}
+
+.swiper-reviews-pagination {
+  font-family: "Circe", sans-serif;
+  opacity: 0.7;
+  color: #f50049;
+  font-size: 18px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+  right: 30px;
+  display: inline-block;
+  width: 5%;
+  left: auto;
+  bottom: 0;
+}
+
+.about__title {
+  line-height: inherit;
+  display: inline-block;
+  margin-bottom: 30px;
+}
+.about__mainTitle {
+  display: none;
+}
+.about__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+.about__textBox {
+  max-width: 552px;
+  margin-right: 90px;
+}
+.about__textBox__title {
+  font-family: "Intro Script R - H 2 Base", sans-serif;
+  color: #32313d;
+  font-size: 26px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+  margin-bottom: 9px;
+}
+.about__textBox__subTitle {
+  font-family: "Circe", sans-serif;
+  color: #2d2829;
+  font-size: 15px;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+  margin-bottom: 5px;
+}
+.about__textBox__text {
+  font-family: "Circe", sans-serif;
+  color: #2d2829;
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+.about__textBox__text:last-of-type {
+  margin-bottom: 0;
+}
+.about__textBox__iconList {
+  margin-top: 15px;
+}
+.about__textBox__iconList img {
+  margin-right: 15px;
+}
+.about__imgBox img {
+  max-width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.quote {
+  margin-top: 111px;
+}
+.quote__container {
+  text-align: center;
+}
+.quote__container img {
+  max-width: 100%;
+}
+.quote__text {
+  font-family: "Playfair Display", sans-serif;
+  color: #2d2829;
+  font-size: 25px;
+  font-weight: 700;
+  font-style: italic;
+  letter-spacing: 0.22px;
+  line-height: normal;
+  text-align: center;
+  max-width: 616px;
+  margin: 40px auto 50px auto;
 }
