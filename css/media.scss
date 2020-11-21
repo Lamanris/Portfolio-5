@@ -1139,3 +1139,281 @@
         }
   }
 }
+
+@media (max-width: 1100px) {
+  .advantages {
+        &__imgBox {
+          margin-right: 90px;
+        }
+        &__textBox {
+          margin-right: 20px;
+        }
+        &__leafBg {
+          width: 8%;
+        }
+        &__cherryBg {
+          width: 5%;
+        }
+        &__strawBg {
+          width: 5%;
+        }
+        &__leavesBg {
+          width: 15%;
+        }
+  }
+}
+
+@media (max-width: 840px) {
+  .advantages {
+    margin-top: 60px;
+        &__subTitle {
+          margin-top: 0;
+          font-size: 26px;
+        }
+        &__imgBox {
+          margin-right: 60px;
+        }
+        &__textBox {
+              &__subTitle {
+                font-size: 15px;
+              }
+              &__text {
+                font-size: 14px;
+              }
+        }
+  }
+}
+
+@media (max-width: 700px) {
+  .advantages {
+    &__wrapper {
+      margin-top: 20px;
+    }
+    &__imgBox {
+      margin-right: 0;
+      width: 70%;
+    }
+    &__textBox {
+      &__firstTextWrapper {
+        margin-left: 18px;
+      }
+      &__secondTextWrapper {
+        margin-left: 12px;
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .advantages {
+    margin-top: 35px;
+    &__subTitle {
+      font-size: 22px;
+    }
+    &__leafBg {
+      display: none;
+    }
+    &__cherryBg {
+      display: none;
+    }
+    &__strawBg {
+      display: none;
+    }
+    &__leavesBg {
+      display: none;
+    }
+    &__imgBox {
+      display: none;
+    }
+    &__wrapper {
+      justify-content: center;
+      background-color: #ffffff;
+      padding-top: 10px;
+      padding-bottom: 15px;
+      margin-top: 8px;
+    }
+    &__textBox {
+      margin-right: 0;
+          &__subTitle {
+            margin-top: 10px;
+          }
+          &__firstBlock {
+            margin-bottom: 20px;
+          }
+          &__block {
+            flex-direction: column;
+            text-align: center;
+          }
+          &__receiptIcon {
+            margin-left: 0;
+          }
+    }
+  }
+}
+
+@media (max-width: 1100px) {
+  .care {
+        &__textBox {
+          width: 80%;
+        }
+  }
+}
+@media (max-width: 840px) {
+  .care {
+    overflow: hidden;
+        &__title {
+          margin-bottom: 5px;
+        }
+        &__subTitle {
+          font-size: 26px;
+        }
+        &__text {
+          font-size: 14px;
+          line-height: normal;
+        }
+        &__imgBox {
+          margin-right: -80px;
+        }
+  }
+}
+
+@media (max-width: 700px) {
+  .care {
+        &__imgBox {
+          width: 90%;
+          margin-right: -110px;
+        }
+  }
+}
+
+@media (max-width: 500px) {
+  .care {
+        &__wrapper {
+          flex-direction: column;
+        }
+        &__imgBox {
+          margin-right: 0;
+          margin-bottom: -75%;
+          width: 130%;
+
+        }
+        &__textBox {
+          width: 100%;
+          margin-top: 35px;
+        }
+        &__subTitle {
+          font-size: 22px;
+        }
+  }
+}
+
+@media (max-width: 1260px) {
+  .orderInfo {
+        &__imgBox {
+          img {
+            margin-left: -30%;
+          }
+        }
+        &__textBox {
+          left: 55%;
+        }
+  }
+}
+
+@media (max-width: 1040px) {
+  .orderInfo {
+        &__imgBox {
+              img {
+                max-width: 125%;
+              }
+        }
+        &__textBox {
+          left: 45%;
+          top: 3vh;
+        }
+  }
+}
+
+@media (max-width: 840px) {
+  .orderInfo {
+        &__textBox {
+          max-width: 332px;
+          top: 10vh;
+              &__title {
+                margin-bottom: 30px;
+              }
+              &__block {
+                margin-bottom: 30px;
+              }
+              &__number {
+                font-size: 36px;
+              }
+              &__subTitle {
+                font-size: 15px;
+              }
+              &__text {
+                font-size: 14px;
+                line-height: 16px;
+              }
+        }
+  }
+}
+
+@media (max-width: 700px) {
+  .orderInfo {
+        &__textBox {
+          top: 5vh;
+          left: 43%;
+              &__title {
+                margin-bottom: 20px;
+              }
+              &__block {
+                margin-bottom: 20px;
+              }
+        }
+  }
+}
+
+@media (max-width: 600px) {
+  .orderInfo {
+        &__wrapper {
+          background-image: url("../img/orderInfo__bg.png");
+        }
+        &__textBox {
+          position: static;
+          margin-left: 40px;
+          margin-right: 40px;
+          max-width: 100%;
+              &__block {
+                margin-bottom: 15px;
+              }
+              &__title {
+                margin-top: 35px;
+                text-align: center;
+              }
+              &__number {
+                font-size: 35px;
+                margin-bottom: 45px;
+              }
+        }
+        &__imgBox {
+          background: url("../img/orderInfo__presentMobile.png") center/cover no-repeat;
+          margin-top: -30px;
+              img {
+                margin-left: 0;
+                opacity: 0;
+                visibility: hidden;
+              }
+        }
+  }
+}
+
+@media (max-width: 340px) {
+  .orderInfo {
+        &__textBox {
+              &__number {
+                margin-bottom: 55px;
+              }
+        }
+  }
+}
