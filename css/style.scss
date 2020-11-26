@@ -463,6 +463,14 @@ body {
             }
             &__chooseCakeBtn {
               margin-bottom: 56px;
+              outline: none;
+              border: none;
+                  &:active {
+                    box-shadow: 0 0 10px 0 rgba(245,0,73,0.5);
+                  }
+                  &.choosed {
+                    box-shadow: 0 0 20px 0 rgba(245,0,73,0.5);
+                  }
             }
       }
 }
@@ -518,6 +526,8 @@ body {
   align-items: flex-end;
 }
 .swiper-sizing-slide {
+  position: relative;
+  cursor: pointer;
       &1 {
         max-width: 15%;
       }
@@ -568,6 +578,19 @@ body {
       }
       &__chooseCakeBtn {
         display: none;
+        border: none;
+        outline: none;
+      }
+      &.choosed {
+            &::after {
+              content: '';
+              width: 95%;
+              height: 2px;
+              background-color: #f50049;
+              position: absolute;
+              bottom: -5%;
+              left: 0;
+            }
       }
 }
 .specialOrder {
@@ -603,6 +626,7 @@ body {
 .swiper-looking-slide {
   text-align: center;
   box-shadow: 0 10px 10px -3px rgba(246,246,246,0.75);
+  cursor: pointer;
     &__textBox {
       margin-top: -80px;
       margin-bottom: 30px;
@@ -632,6 +656,11 @@ body {
     }
     &__chooseCakeBtn {
       display: none;
+      border: none;
+      outline: none;
+    }
+    &.choosed {
+      box-shadow: 0 0 15px 0 rgba(245,0,73,0.25);
     }
 }
 .swiper-looking-button-prev {
@@ -696,6 +725,10 @@ body {
             display: inline-block;
           }
     }
+      &__chooseCakeBtn {
+        border: none;
+        outline: none;
+      }
 }
 
 .reviews {
@@ -1104,7 +1137,7 @@ body {
 
 .contacts {
   position: relative;
-  background-image: url("../img/contacts__bgImg111.png");
+  background-image: url("../img/contacts__bgImg.png");
   background-repeat: no-repeat;
   background-size: 65%;
   background-position: 100% 100%;
