@@ -10,15 +10,17 @@ let fillingSwiper = new Swiper('.fillingSwiper-container', {
         type: 'fraction',
     },
 });
-if (screen.width <= 550) {
+
+if (window.innerWidth <= 550) {
     let sizingSwiper = new Swiper('.sizingSwiper-container', {
         loop: true,
         spaceBetween: 50,
         pagination: {
             el: '.swiper-sizing-pagination',
         },
-    });
+    })
 }
+
 let lookingSwiper = new Swiper('.lookingSwiper-container', {
     loop: true,
     slidesPerView: 1,
@@ -50,17 +52,3 @@ let reviewsSwiper = new Swiper('.reviewsSwiper-container', {
         type: 'fraction',
     },
 });
-
-
-
-
-// $("#photoButton").on("click",function(){
-//     setTimeout(function () {
-//         photoSwiper1.update();
-//     }, 1);
-// });
-// $("#videoButton").on("click",function(){
-//     setTimeout(function () {
-//         videoSwiper1.update();
-//     }, 1);
-// });
